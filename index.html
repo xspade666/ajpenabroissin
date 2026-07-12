@@ -541,7 +541,6 @@
 // ─────────────────────────────────────────────
 const WORKS = [
   {
-    id: 1,
     title: "Sediments of Summer",
     subtitle: "Solo + Collaborative Exhibition",
     year: "2026",
@@ -555,7 +554,6 @@ const WORKS = [
       Earth functions both as archive and building material, sound recalls forces of rupture and displacement, and light moves through the space as a shifting, guiding presence.`
   },
   {
-    id: 2,
     title: "Odyssey",
     subtitle: "Sound Sculpture",
     year: "2026",
@@ -571,7 +569,6 @@ const WORKS = [
     Referencing the cave of Odysseus and the figure of <em>Nobody</em>, the work removes authorship and fixed meaning, leaving only resonance.`
   },
   {
-    id: 3,
     title: "Geodesy",
     subtitle: "Durational Performance",
     year: "2025",
@@ -584,7 +581,6 @@ const WORKS = [
     Guided by themes of migration, diaspora, appropriation, and translation, an ironic Medium tears books apart, channeling an improvised narrative and inviting the listener into the elasticity of meaning.`
   },
   {
-    id: 4,
     title: "Everything Under the Sky Belongs to the Earth 天下为地",
     subtitle: "Performance and resulting ephemeral sculpture <em>Línea</em> (as installed in <em>KAAMOS</em>)",
     year: "2024",
@@ -600,7 +596,6 @@ const WORKS = [
     Left to decay, the piece filled the gallery with mosquitoes.`
   },
   {
-    id: 5,
     title: "Tekstin Taco",
     subtitle: "Artists Run Kitchen",
     year: "2023 — 2026",
@@ -797,7 +792,10 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
   });
 });
 
+WORKS.forEach((w, i) => w.id = i + 1);
 buildList();
+showWork(1);
+  
 </script>
 
 </body>
