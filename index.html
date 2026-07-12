@@ -392,7 +392,7 @@
   <aside id="sidebar">
 
     <div id="identity">
-      <h1>Artist Name</h1>
+      <h1>Amado Peña</h1>
       <p>Helsinki &nbsp;·&nbsp; Practice</p>
     </div>
 
@@ -412,7 +412,7 @@
     <nav id="worklist"></nav>
 
     <div id="sidebar-footer">
-      <a href="mailto:you@example.com">Contact</a>
+      <a href="mailto:aj.penabroissin@ggmail.com">Contact</a>
       <a href="#" target="_blank">CV</a>
       <a href="#" target="_blank">Instagram</a>
     </div>
@@ -440,6 +440,7 @@
           <div class="meta-field"><label>Year</label><span id="meta-year"></span></div>
           <div class="meta-field"><label>Medium</label><span id="meta-medium"></span></div>
           <div class="meta-field"><label>Dimensions</label><span id="meta-dimensions"></span></div>
+          <div class="meta-field"><label>Venue</label><span id="meta-venue"></span></div>
         </div>
         <div id="work-description"></div>
       </div>
@@ -452,29 +453,29 @@
       <div class="about-body">
         <!-- ↓ Edit this text ↓ -->
         <p>
-          Artist and creative practitioner based in Helsinki. Work spans
+          Artist and creative practitioner based in Helsinki. Work spans poetry,
           sculptural installation, graphic design, event production,
           and culinary research.
         </p>
         <p>
-          Recurring interests: language as material, durational systems,
-          the politics of hospitality, and the deep culinary cultures of
-          southern Mexico — particularly Chiapas and Veracruz.
+          Recurring interests: language as material, semantic archeology, 
+          durational systems, the politics of hospitality, ecological displacement,
+          speculative ecologies.
         </p>
         <p>
-          Currently developing <em>Balzac</em>, a specialty café in Helsinki
-          conceived as a continuation of the 18th-century European café as
-          a site of radical sociality.
+          Currently developing <em>Larga Esquina de Verano</em>, a research and production
+          grant for artistic development by the Kone Foundation. This artistic research is 
+          grounded in themes of migrating ecologies, diaspora, and ecological displacement.
         </p>
       </div>
 
       <!-- Selected exhibitions / events -->
       <div class="about-section">
         <h3>Selected Work</h3>
-        <div class="cv-row"><span class="cv-year">2025</span><span>Praying Machine — [Festival Name], Helsinki</span></div>
-        <div class="cv-row"><span class="cv-year">2024</span><span>Zapateado Workshop — Son Jarocho event, Helsinki</span></div>
-        <div class="cv-row"><span class="cv-year">2024</span><span>Sana Sanatta — [Venue], Helsinki</span></div>
-        <div class="cv-row"><span class="cv-year">2023–</span><span>Balzac — Ongoing development</span></div>
+        <div class="cv-row"><span class="cv-year">2025</span><span>Sediments of Summer — Levyhalli, Suomenlinna </span></div>
+        <div class="cv-row"><span class="cv-year">2024</span><span>Geodesy — Tekstinfestivaali, Helsinki </span></div>
+        <div class="cv-row"><span class="cv-year">2024</span><span>Odyssey — Tekstinfestivaali, Helsinki </span></div>
+        <div class="cv-row"><span class="cv-year">2023–</span><span>Teksintaco — Bar Tÿpo, Helsinki </span></div>
       </div>
 
       <!-- Culinary research -->
@@ -514,10 +515,10 @@ const WORKS = [
     subtitle: "Rammed-earth Monoliths with Soil from Suomenlinna",
     year: "2026",
     medium: "Vernacular building technique, Soil, Water, Wood Frame",
-    dimensions: "Suomenlinna", "Levyhalli",
+    venue: ["Suomenlinna", "Levyhalli"],
     category: "sculpture", "curatorial",
     images: [],
-    description: `An exhibition that develops as an environment shaped by accumulation, compression, and change. 
+    description: `This exhibition develops as an environment shaped by accumulation, compression, and change. 
     Rammed-earth monoliths, subsonic sound, filtered light, and invited artistic interventions draw on geological processes and material residues of human activity to imagine a landscape between ruin and construction.
       <br><br>
       Earth functions both as archive and building material, sound recalls forces of rupture and displacement, and light moves through the space as a shifting, guiding presence.`
@@ -528,13 +529,14 @@ const WORKS = [
     subtitle: "Nobody",
     year: "2026",
     medium: "Touch Designer, Torn Book Pages",
-    dimensions: "2x4m room", "Tekstifestivaali",
+    dimensions: ["2x4m room", "Tekstifestivaali"],
     category: "sculpture",
     images: [],
     description: `<em>Odyssey</em> is a sound sculpture composed of torn book pages and altered sound. 
     The pages, produced during a previous durational performance, are assembled into a cave-like structure that shapes echoes and listening. 
-    Audio from the performance is used to distort Beethoven’s Pathétique, allowing fragments of melody to surface through the human voice. 
-    Referencing the cave of Odysseus and the figure of “Nobody”, the work removes authorship and fixed meaning, leaving only resonance.`
+    Audio from the performance is used to distort Beethoven’s Pathétique, allowing fragments of melody to surface through the human voice.
+    <br><br>
+    Referencing the cave of Odysseus and the figure of <em>Nobody</em>, the work removes authorship and fixed meaning, leaving only resonance.`
   },
   {
     id: 3,
@@ -542,7 +544,7 @@ const WORKS = [
     subtitle: "Durational Performance",
     year: "2025",
     medium: "Voice, Books, Soundscapes",
-    dimensions: "≈3h", "Tekstifestivaali",
+    dimensions: ["≈3h", "Tekstifestivaali"],
     category: "performance",
     images: [],
     description: `In this performance, books become broken vases of improvisation and transformation. 
@@ -554,11 +556,12 @@ const WORKS = [
     subtitle: "Línea (as installed in KAAMOS)",
     year: "2024",
     medium: "Soil, Flowers, Ice, Poetry, Intervention",
-    dimensions: "Suomenlinna", "Galleria Augusta",
+    dimensions: "2m x 1m", 
+    venue: ["Suomenlinna", "Galleria Augusta"],
     category: "installation", "performance",
     images: [],
     description: `Staged at Galleria Augusta / HIAP, the performance took its title from a reworking of the classical Chinese phrase 天下为公 — "all under heaven belongs to the people" — replacing 公 with 地: the earth. 
-    Sovereignty is shifted from the people to the land itself.
+    This way, the sovereignty is shifted from the people to the land itself.
     An unintended piece emerged during the performance, made of soil, flowers, and ice. 
     Rather than dismantle it, the artist chose to leave it in place — and it began to function within Daniel Malpikka's exhibition KAAMOS, where it was renamed Línea for the exhibition's duration. 
     Left to decay, the piece filled the gallery with mosquitoes.`
@@ -569,7 +572,7 @@ const WORKS = [
     subtitle: "Artists Run Kitchen",
     year: "2023 — 2026",
     medium: "Food, event production",
-    dimensions: "Helsinki", "Bar Tÿpo",
+    venue: ["Helsinki", "Bar Tÿpo"],
     category: "food",
     images: [],
     description: `Founder of Tekstin Taco: a writers-run kitchen and conceptual art project by K’u’um Collective, blending Nordic and Mesoamerican ingredients through corn-based creations. 
