@@ -501,13 +501,13 @@
         </p>
       </div>
 
-      <!-- Selected exhibitions / events -->
+                                                                <!-- SLECTED EXHIBITIONS / EVENTS -->
       <div class="about-section">
         <h3>Selected Work</h3>
-        <div class="cv-row"><span class="cv-year">2026</span><span>Sediments of Summer — Levyhalli, Suomenlinna </span></div>
-        <div class="cv-row"><span class="cv-year">2025</span><span>Geodesy — Tekstinfestivaali, Helsinki </span></div>
-        <div class="cv-row"><span class="cv-year">2026</span><span>Odyssey — Tekstinfestivaali, Helsinki </span></div>
-        <div class="cv-row"><span class="cv-year">2023–2026</span><span>Teksintaco — Bar Tÿpo, Helsinki </span></div>
+                                      <div class="cv-row"><span class="cv-year">2026</span><span><a href="#" onclick="showWorkByTitle('Sediments of Summer');return false;">Sediments of Summer</a> — Levyhalli, Suomenlinna</span></div>
+                                      <div class="cv-row"><span class="cv-year">2025</span><span><a href="#" onclick="showWorkByTitle('Geodesy');return false;">Geodesy</a> — Tekstinfestivaali, Helsinki</span></div>
+                                      <div class="cv-row"><span class="cv-year">2026</span><span><a href="#" onclick="showWorkByTitle('Odyssey');return false;">Odyssey</a> — Tekstinfestivaali, Helsinki</span></div>
+                                      <div class="cv-row"><span class="cv-year">2023–26</span><span><a href="#" onclick="showWorkByTitle('Tekstin Taco');return false;">Tekstin Taco</a> — Bar Tÿpo, Helsinki</span></div>
       </div>
 
       <!-- Culinary research -->
@@ -792,6 +792,12 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
 });
 
 WORKS.forEach((w, i) => w.id = i + 1);
+
+function showWorkByTitle(title) {
+  const w = WORKS.find(x => x.title === title);
+  if (w) showWork(w.id);
+}
+
 buildList();
 showWork(1);
   
